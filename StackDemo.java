@@ -39,15 +39,19 @@ public class StackDemo {
 
 	//prints array elements present on stack
 	void printData() {
+		System.out.println("Printing array elements in Stack...");
 		for (int i = 0; i <= top; i++) {
 			System.out.println("a[" + i + "] : " + a[i]);
-			System.out.println("array");
 		}
 	}
 
 	public static void main(String[] args) {
 
 		StackDemo sd = new StackDemo();
+		
+		sd.printData();
+		System.out.println();
+		
 		sd.push(2);
 		sd.push(5);
 		sd.push(8);
