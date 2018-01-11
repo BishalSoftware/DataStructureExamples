@@ -48,6 +48,10 @@ public class StackDemo {
 	public static void main(String[] args) {
 
 		StackDemo sd = new StackDemo();
+		
+		sd.printData();
+		System.out.println();
+		
 		sd.push(2);
 		sd.push(5);
 		sd.push(8);
