@@ -42,7 +42,6 @@ public class StackDemo {
 		System.out.println("Printing array elements in Stack...");
 		for (int i = 0; i <= top; i++) {
 			System.out.println("a[" + i + "] : " + a[i]);
-			System.out.println("array");
 		}
 	}
 
