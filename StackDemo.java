@@ -55,6 +55,10 @@ public class StackDemo {
 		sd.push(15);
 		sd.push(50);
 		sd.push(20);
+		
+		System.out.println();
+		sd.printData();
+		System.out.println();
 
 		sd.pop();
 		sd.pop();
