@@ -3,12 +3,13 @@ package com.BishalSoftware.Jan09_2018;
 public class StackDemo {
 	int top;
 	final int M = 5;
-	int[] a = new int[M];
+	int[] a = new int[M]; //array with M capacity of array element is created for stack operation
 
 	StackDemo() {
 		top = -1; // initialize the state of an object (to create object and assign values to object's instance variable)
 	}
 
+	//push method to place an element on top for stack operation
 	void push(int k) {
 		top++;
 		if (top <= (a.length - 1)) {
@@ -20,6 +21,7 @@ public class StackDemo {
 		}
 	}
 
+	//pop method for taking out a top element from stack
 	void pop() {
 		if (isEmpty() == false) {
 			System.out.println(a[top]);
@@ -30,10 +32,12 @@ public class StackDemo {
 		}
 	}
 
+	//Returns true if stack is empty; otherwise returns false if stack has an array element. 
 	boolean isEmpty() {
 		return (top < 0);
 	}
 
+	//prints array elements present on stack
 	void printData() {
 		for (int i = 0; i <= top; i++) {
 			System.out.println("a[" + i + "] : " + a[i]);
