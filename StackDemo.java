@@ -6,7 +6,7 @@ public class StackDemo {
 	int[] a = new int[M];
 
 	StackDemo() {
-		top = -1;
+		top = -1; // initialize the state of an object (to create object and assign values to object's instance variable)
 	}
 
 	void push(int k) {
