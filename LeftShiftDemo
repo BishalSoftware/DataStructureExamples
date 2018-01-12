@@ -1,0 +1,26 @@
+public class LeftShiftDemo {
+
+	public static void main(String[] args) {
+		int[] a1 = new int[] { 92, 74, 80, 48, 24, 61, 30, 57, 51 };
+		int[] a2 = new int[a1.length];
+
+		for (int i = 0; i <= a1.length - 1; i++) {
+			System.out.print(a1[i] + " ");
+		}
+		System.out.println();
+
+		// Left Shift (Rotation) by m array element
+		//suppose m=4;
+		int m = 4;
+
+		for (int i = m; i <= a1.length - 1; i++) {
+			a2[i - m] = a1[i];
+			System.out.print(a2[i - m] + " ");
+		}
+
+		for (int i = 0; i < m; i++) {
+			a2[(a1.length - m) + i] = a1[i];
+			System.out.print(a2[(a1.length - m) + i] + " ");
+		}
+	}
+}
