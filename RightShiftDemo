@@ -1,0 +1,20 @@
+public class RightShiftDemo {
+
+	public static void main(String[] args) {
+		int[] array1 = new int[] { 93, 27, 45, 71, 38, 18, 59 };
+
+		int[] array2 = new int[array1.length];
+		
+		//Right shift by m array element
+		//suppose m=3;
+		int m=3;
+		for (int i=0;i<m;i++) {
+			array2[i]=array1[(array1.length-m)+i];
+			System.out.println(array2[i]);
+		}
+		for (int i=m;i<=array1.length-1;i++) {
+			array2[i]=array1[i-m];
+			System.out.println(array2[i]);
+		}
+	}
+}
