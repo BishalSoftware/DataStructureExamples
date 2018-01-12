@@ -27,7 +27,7 @@ public class StackDemo {
 			System.out.println(a[top]);
 			top--;
 		}
-		if (isEmpty() == true) {
+		else if (isEmpty() == true) {
 			System.out.println("Underflow");
 		}
 	}
